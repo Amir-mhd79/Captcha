@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPTCHA</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/setting.css">
+    <link rel="stylesheet" href="./icons/css/all.min.css">
+</head>
+<body class="w-screen h-screen flex justify-center items-center">
+    <!--start making CAPTCHA exercise-->
+    <div class="2xl:w-[400px] xl:w-[400px] lg:w-[400px] md:w-[400px] sm:w-[400px] w-[300px] h-auto bg-gray-200 p-5 rounded-md">
+        <div class="text-center mb-[20px]">
+            <a href="#"><img src="./images/wolf.png" alt="wolf" class="w-[100px]"></a>
+        </div>
+        <div class="flex flex-col mb-[30px]">
+            <label for="email" class="capitalize mb-1 font-serif text-center">enter your email</label>
+            <input type="email" id="email" placeholder="test@gmail.com" class="h-[32px] pl-1 text-lg text-green-700 border-none rounded-md outline-green-950">
+        </div>
+        <div class="flex items-end mb-2">
+            <div class="captcha w-[130px] h-[50px] bg-white mr-2 text-center leading-[50px] text-2xl font-bold font-sans bgCaptcha select-none"></div>
+            <i class="refresh fas fa-redo-alt text-xl cursor-pointer"></i>
+            <input type="text" class="2xl:w-[170px] xl:w-[170px] lg:w-[170px] md:w-[170px] sm:w-[170px] w-[110px] code ml-5 h-[32px] pl-1" placeholder="Enter The Code">
+        </div>
+        <h4 class="alert hidden text-red-600 underline underline-offset-2">The entered code is INCORECT.<br>
+            Please try again.
+        </h4>
+        <div class="text-center mt-[25px]">
+            <button class="signIn captBtn w-[80px] h-[32px] bg-green-700 text-white text-lg border-none rounded-lg cursor-pointer hover:bg-green-900 duration-300">Sign in</button>
+        </div>
+    </div>
+    <!--end of making CAPTCHA exercise-->
+    <script src="./JavaScript/main.js"></script>
+</body>
+</html>
